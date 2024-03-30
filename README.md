@@ -117,7 +117,7 @@ https://polkadot.js.org/apps/?rpc=wss://fraa-dancebox-rpc.a.dancebox.tanssi.netw
 * 2 resimdeki gibi seçin `setkeys(keys,proof)`
 * 3 key olusturmustuk onu girin
 * 4 girin `0x`
-> Tıklayın İşlem Gönder ve işlemi cüzdanınızdan imzalayıp gönderin
+> 5 Tıklayın İşlem Gönder ve işlemi cüzdanınızdan imzalayıp gönderin
 
 ![image](https://github.com/molla202/Tanssi/assets/91562185/028512d5-82f3-415e-8bc6-f23a860db449)
 
