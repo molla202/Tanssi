@@ -38,7 +38,6 @@ cd /root/tanssi-data/
 
 mv /root/tanssi-node /root/tanssi-data
 
-sudo chmodx+ /root/tanssi-data/tanssi-node
 ```
 ```
 sudo tee /etc/systemd/system/tanssid.service > /dev/null <<'EOF'
