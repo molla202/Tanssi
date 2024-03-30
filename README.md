@@ -26,7 +26,13 @@ Tanssi, geliştiricileri, uygulama dağıtımını hızlı ve zahmetsiz hale get
 | RAM	| 4+ GB |
 | Storage	| 160+ GB SSD |
 
+### Öcelikle form dolduralım
 
+https://polkadot.js.org/apps/?rpc=wss://fraa-dancebox-rpc.a.dancebox.tanssi.network#/accounts
+
+* Adres olsuturun veya varsa adresinizi alın ve formu doldurun
+
+https://www.tanssi.network/block-producer-form
 
 ```
 wget https://github.com/moondance-labs/tanssi/releases/download/v0.5.0/tanssi-node && \
@@ -115,7 +121,7 @@ https://polkadot.js.org/apps/?rpc=wss://fraa-dancebox-rpc.a.dancebox.tanssi.netw
 
 ![image](https://github.com/molla202/Tanssi/assets/91562185/028512d5-82f3-415e-8bc6-f23a860db449)
 
-NOT: şimdi faucet için bir form doldurmalı ve discordan rol almalıyız.
+NOT: şimdi faucet için bir form doldurmalı ve discordan rol almalıyız. dokumanın basında bu kısım var sadece hatırlatma amacıyla yazıyorum.
 
  https://www.tanssi.network/block-producer-form
 
