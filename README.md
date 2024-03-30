@@ -103,13 +103,25 @@ curl http://127.0.0.1:9944 -H \
   }'
 ```
 ## KEyi kaydedelim
-* 1 cüzdanı seçin olusturmadıysanız accountan olusturup bilgilerini yedekleyin.
+* Linke gidelim.
+
+https://polkadot.js.org/apps/?rpc=wss://fraa-dancebox-rpc.a.dancebox.tanssi.network#/extrinsics
+
+* 1 cüzdanı seçin olusturmadıysanız accountan olusturup bilgilerini yedekleyin. yok oluşturcam derseniz sunucundanda olusturabilirsiniz `/root/tanssi-data/tanssi-node key generate -w 24`
 * 2 resimdeki gibi seçin `setkeys(keys,proof)`
 * 3 key olusturmustuk onu girin
 * 4 girin `0x`
 > Tıklayın İşlem Gönder ve işlemi cüzdanınızdan imzalayıp gönderin
 
 ![image](https://github.com/molla202/Tanssi/assets/91562185/028512d5-82f3-415e-8bc6-f23a860db449)
+
+NOT: şimdi faucet için bir form doldurmalı ve discordan rol almalıyız.
+
+ https://www.tanssi.network/block-producer-form
+
+## Bond işlemi
+
+
 
 
 
