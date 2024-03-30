@@ -35,7 +35,7 @@ https://polkadot.js.org/apps/?rpc=wss://fraa-dancebox-rpc.a.dancebox.tanssi.netw
 https://www.tanssi.network/block-producer-form
 
 ```
-wget https://github.com/moondance-labs/tanssi/releases/download/v0.5.0/tanssi-node && \
+wget https://github.com/moondance-labs/tanssi/releases/download/v0.5.2/tanssi-node && \
 chmod +x ./tanssi-node
 
 sudo mkdir /root/tanssi-data/
