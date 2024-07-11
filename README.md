@@ -15,7 +15,7 @@ Tanssi, geliştiricileri, uygulama dağıtımını hızlı ve zahmetsiz hale get
  [Twitter](https://twitter.com/TanssiNetwork)<br>
  [Doc](https://docs.tanssi.network/node-operators/block-producers/onboarding/run-a-block-producer/block-producer-systemd/)<br>
  [Explorer](https://polkadot.js.org/apps/?rpc=wss://fraa-dancebox-rpc.a.dancebox.tanssi.network#/extrinsics)<br>
-
+ [Telemetry](https://telemetry.polkadot.io/#stats/0x27aafd88e5921f5d5c6aebcd728dacbbf5c2a37f63e2eda301f8e0def01c43ea)<br>
 
 </h1>
 
@@ -34,8 +34,9 @@ https://polkadot.js.org/apps/?rpc=wss://fraa-dancebox-rpc.a.dancebox.tanssi.netw
 
 https://www.tanssi.network/block-producer-form
 
+
 ```
-wget https://github.com/moondance-labs/tanssi/releases/download/v0.5.2/tanssi-node && \
+wget https://github.com/moondance-labs/tanssi/releases/download/v0.7.0/tanssi-node && \
 chmod +x ./tanssi-node
 
 sudo mkdir /root/tanssi-data/
@@ -45,6 +46,7 @@ cd /root/tanssi-data/
 mv /root/tanssi-node /root/tanssi-data
 
 ```
+NOT: molla202 yazan yerleri kendi adınızla değiştirin
 ```
 sudo tee /etc/systemd/system/tanssid.service > /dev/null <<'EOF'
 [Unit]
@@ -63,26 +65,28 @@ KillSignal=SIGHUP
 ExecStart=/root/tanssi-data/tanssi-node \
 --chain=dancebox \
 --name=molla202 \
+--unsafe-force-node-key-generation \
 --sync=warp \
 --base-path=/root/tanssi-data/para \
 --state-pruning=2000 \
 --blocks-pruning=2000 \
 --collator \
+--telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
 --database paritydb \
---telemetry-url='wss://telemetry.polkadot.io/submit/ 0' 
 -- \
 --name=molla202 \
 --base-path=/root/tanssi-data/container \
---telemetry-url='wss://telemetry.polkadot.io/submit/ 0' 
+--telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
 -- \
 --chain=westend_moonbase_relay_testnet \
 --name=molla202 \
+--unsafe-force-node-key-generation \
 --sync=fast \
 --base-path=/root/tanssi-data/relay \
 --state-pruning=2000 \
---blocks-pruning=2000 
+--blocks-pruning=2000 \
+--telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
 --database paritydb \
---telemetry-url='wss://telemetry.polkadot.io/submit/ 0' 
 
 [Install]
 WantedBy=multi-user.target
@@ -97,6 +101,20 @@ sudo systemctl restart tanssid.service
 journalctl -u tanssid -fo cat
 ```
 
+### snap
+NOT: çalıştırıp loglar azcuk aktıktan sonra yapın
+```
+systemctl stop tanssid
+cd
+sudo apt-get install aria2
+sudo apt-get install lz4
+aria2c -x 16 -s 16 -o dancebox_snapshot_latest.tar.lz4 https://snapshot.tanssi.johnvnb.com/dancebox_snapshot_latest.tar.lz4
+aria2c -x 16 -s 16 -o westend_moonbase_relay_testnet_snapshot_latest.tar.lz4 https://snapshot.tanssi.johnvnb.com/westend_moonbase_relay_testnet_snapshot_latest.tar.lz4
+rm -rf /root/tanssi-data/para/chains/dancebox/paritydb/*
+rm -rf /root/tanssi-data/relay/chains/westend_moonbase_relay_testnet/paritydb/*
+lz4 -dc dancebox_snapshot_latest.tar.lz4 | tar -xf - -C /root/tanssi-data/para/chains/dancebox/paritydb
+lz4 -dc westend_moonbase_relay_testnet_snapshot_latest.tar.lz4 | tar -xf - -C /root/tanssi-data/relay/chains/westend_moonbase_relay_testnet/paritydb
+```
 ## Key olusturalım.
 ```
 curl http://127.0.0.1:9944 -H \
@@ -126,10 +144,6 @@ NOT: şimdi faucet için bir form doldurmalı ve discordan rol almalıyız. doku
  https://www.tanssi.network/block-producer-form
 
 ## Bond işlemi
-
-
-
-
 
 
 
