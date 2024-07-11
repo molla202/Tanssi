@@ -134,7 +134,7 @@ https://polkadot.js.org/apps/?rpc=wss://fraa-dancebox-rpc.a.dancebox.tanssi.netw
 * 2 resimdeki gibi seçin `setkeys(keys,proof)`
 * 3 key olusturmustuk onu girin
 * 4 girin `0x`
-> 5 Tıklayın İşlem Gönder ve işlemi cüzdanınızdan imzalayıp gönderin
+* 5 Tıklayın İşlem Gönder ve işlemi cüzdanınızdan imzalayıp gönderin
 
 ![image](https://github.com/molla202/Tanssi/assets/161881320/8846b070-f1b2-425f-872b-3a8f48602b09)
 
@@ -151,7 +151,7 @@ https://polkadot.js.org/apps/?rpc=wss://dancebox.tanssi-api.network#/chainstate
 * 2 girin `nmbs`
 * 3 key olusturmustuk onu girin
 * 4 sağ üstteki + ya basın
-> 5 bu kısımda cüzdan adresinizin çıkması gerekiyor
+* 5 bu kısımda cüzdan adresinizin çıkması gerekiyor
 
 ![image](https://github.com/molla202/Tanssi/assets/161881320/42d8b56d-e51e-4924-a54c-1ed794e43692)
 
@@ -166,7 +166,7 @@ https://polkadot.js.org/apps/?rpc=wss://dancebox.tanssi-api.network#/extrinsics
 * 3 cüzdanınızı seçin
 * 4 resimdeki gibi seçin `auto-compounding`
 * 5 resimdeki kısma `stake: u128 (Balance)` 10000000000000000 yazalım
-> 6 submit transaction diyelim
+* 6 submit transaction diyelim
 
 ![image](https://github.com/molla202/Tanssi/assets/161881320/ee8717c2-c55f-4dcb-b953-06fa650dfc65)
 
@@ -179,7 +179,7 @@ https://polkadot.js.org/apps/?rpc=wss://dancebox.tanssi-api.network#/chainstate
 * 2 cüzdanınızı seçin
 * 3 bu kısmı kapatalım `include option`
 * 4 resimdeki gibi + butonuna basalım
-> Cüzdanımızı kontrol edelim, burada isteği kaçıncı session'da (dönemde) yaptığımızı görebiliriz
+* Cüzdanımızı kontrol edelim, burada isteği kaçıncı session'da (dönemde) yaptığımızı görebiliriz
 
 ![image](https://github.com/molla202/Tanssi/assets/161881320/e605e62a-bb5e-476a-be86-d7aac36190d1)
 
@@ -191,7 +191,7 @@ https://polkadot.js.org/apps/?rpc=wss://dancebox.tanssi-api.network#/chainstate
 * 1 resimdeki gibi seçin önce `session` sonra `currentIndex`
 * 2 resimdeki gibi + butonuna basalım
 * 3 bu kısmı kapatalım `include option`
-> 4 bu kısımda güncel ağın güncel olarak kaçıncı sesion'da olduğuna bakabiliriz
+* 4 bu kısımda güncel ağın güncel olarak kaçıncı sesion'da olduğuna bakabiliriz
 
 ![image](https://github.com/molla202/Tanssi/assets/161881320/e63e05fc-cd12-4fa3-9b1d-9749ef964a73)
 
@@ -206,7 +206,7 @@ https://polkadot.js.org/apps/?rpc=wss://dancebox.tanssi-api.network#/extrinsics
 * 4 resimdeki gibi seçin `JoiningAutoCompounding`
 * 5 cüzdanınızı seçin
 * 6 bu kısma isteği yaptığımız session numarasını girelim
-> 7 submit transaction diyelim. bu işlemden sonra artık blok üretmeye başlayabiliriz
+* 7 submit transaction diyelim. bu işlemden sonra artık blok üretmeye başlayabiliriz
 
 ![image](https://github.com/molla202/Tanssi/assets/161881320/a959bc52-2f92-4ad7-8692-f8b6f7fef470)
 
@@ -217,6 +217,6 @@ https://polkadot.js.org/apps/?rpc=wss://dancebox.tanssi-api.network#/chainstate
 
 * 2 resimdeki gibi seçin önce `pooledStaking` sonra `sortedEligibleCandidates`
 * 2 resimdeki gibi + butonuna basalım
-> 3 buradan cüzdan adresinizi aratıp doğrulayabilirsiniz
+* 3 buradan cüzdan adresinizi aratıp doğrulayabilirsiniz
 
 ![image](https://github.com/hazennetworksolutions/Tanssi/assets/161881320/4fad10b0-05f8-4338-89f1-14740ab1fe01)
