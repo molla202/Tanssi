@@ -1,4 +1,3 @@
-![image](https://github.com/molla202/Tanssi/assets/161881320/f87fa781-7c83-48c5-b013-559fd08709bd)
 <h1 align="center"> Tanssi
 
 ![image](https://github.com/molla202/Tanssi/assets/91562185/209da5fb-efe6-4170-a7ba-90511307e0f7)
@@ -196,7 +195,7 @@ https://polkadot.js.org/apps/?rpc=wss://dancebox.tanssi-api.network#/chainstate
 
 ![image](https://github.com/molla202/Tanssi/assets/161881320/e63e05fc-cd12-4fa3-9b1d-9749ef964a73)
 
-## Ağın güncel olarak kaçıncı session'da olduğuna bakalım
+## Yaptığımız isteği onaylatalım. bunun için yaklaşık 2 session geçmesi gerekiyor
 * Linke gidelim.
 
 https://polkadot.js.org/apps/?rpc=wss://dancebox.tanssi-api.network#/extrinsics
@@ -211,7 +210,7 @@ https://polkadot.js.org/apps/?rpc=wss://dancebox.tanssi-api.network#/extrinsics
 
 ![image](https://github.com/molla202/Tanssi/assets/161881320/a959bc52-2f92-4ad7-8692-f8b6f7fef470)
 
-## Ağın güncel olarak kaçıncı session'da olduğuna bakalım
+## Onay işlemini kontrol edelim
 * Linke gidelim.
 
 https://polkadot.js.org/apps/?rpc=wss://dancebox.tanssi-api.network#/chainstate
