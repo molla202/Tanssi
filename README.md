@@ -219,11 +219,4 @@ https://polkadot.js.org/apps/?rpc=wss://dancebox.tanssi-api.network#/chainstate
 * 2 resimdeki gibi + butonuna basalım
 > 3 buradan cüzdan adresinizi aratıp doğrulayabilirsiniz
 
-![image](https://github.com/molla202/Tanssi/assets/161881320/a959bc52-2f92-4ad7-8692-f8b6f7fef470)
-
-
-
-
-
-
-
+![image](https://github.com/hazennetworksolutions/Tanssi/assets/161881320/4fad10b0-05f8-4338-89f1-14740ab1fe01)
